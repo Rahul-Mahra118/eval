@@ -91,5 +91,9 @@ document.addEventListener("DOMContentLoaded", async () => {
    
   }
   apartments=await fetchData()
-  displayData(apartments)
+  displayData(apartments.slice(0,4))
+  let currentpage=1;
+  function pagination(){
+   
+  }
 });
