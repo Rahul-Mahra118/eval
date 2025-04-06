@@ -35,14 +35,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     let price = document.getElementById("price-input").value;
     let bedrooms = document.getElementById("bedroom-input").value;
     const selectAvailability = document.getElementById("check-Available").value;
-    let availableValue = selectAvailability == "true" ? true : false;
-
-    //
+    let availableValue;
+    if (selectAvailability === "true") {
+        availableValue = true;
+      } else if (selectAvailability === "false") {
+        availableValue = false;
+      } else {
+        availableValue = undefined;
+      }
     const filterData = apartments.filter((data) => {
       if (
-        (price === "" || data.price === price) &&
-        (bedrooms === "" || data.bedrooms === bedrooms) &&
-        (availableValue === "" || data.available === availableValue)
+        (price === "" || Number(data.price) === Number(price)) &&
+        (bedrooms === "" || Number(data.bedrooms) ===Number(bedrooms) ) &&
+        (data.available === availableValue)
       ) {
         return data;
       }
