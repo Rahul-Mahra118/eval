@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#addData{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px ;
+    background-color: beige;
+}
+#addData div{
+    max-width: 100%;
+    margin: auto;
+    gap: 10px;
+}
+#addData input{
+    padding: 6px;
+    border: 1px solid black;
+}
+#addData button{
+    padding: 8px 12px;
+    background-color: #152ae7;
+    color:white;
+    border:none;
+}
+
+#search-container{
+    margin: 10px auto;
+}
+#search-container input{
+    padding: 6px;
+    border: 1px solid black;
+}
+#search-container button{
+    padding: 8px 12px;
+    background-color: #152ae7;
+    color:white;
+    border:none;
+}
+#filterBox{
+    margin: 10px auto;
+}
+#filterBox input,select{
+    padding: 6px;
+    border: 1px solid black;
+}
+#filterBox button{
+    padding: 8px 12px;
+    background-color: #152ae7;
+    color:white;
+    border:none;
+}
+#displayData{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    justify-content: center;
+    gap: 40px;
+}
+.apartment-div{
+    border: 1px solid black;
+    max-width: 350px;
+    padding: 20px;
+    background-color: rgb(80, 252, 255);
+    box-shadow: 3px 2px 2px rgb(223, 203, 243);
+}
+

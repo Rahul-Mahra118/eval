@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div id="addData">
+        <div class="heading"><h1>Add the data </h1></div>
+        <div><input type="text" placeholder="Enter the name" id="add-input-name">
+            <input type="number" placeholder="Enter the total bedrooms" id="add-input-bedroom">
+            <input type="number" placeholder="Enter the price" id="add-input-price">
+            <button id="add-data">Add Data</button></div>
+    </div>
+    <div id="search-container">
         <input type="text" placeholder="Enter aparment Name" id="name-input">
         <button id="search">Search</button>
     </div>
+    <!-- Implement filters for:
+Price Range (Slider: $0-$3000)
+Bedrooms (Options: 1, 2, 3+)
+Available Only (Toggle) -->
     <div id="filterBox">
-        <h2>Filter By Your Choice</h2>
-        
+        <h2 style="text-align: center; margin: 20px;">Filter By Your Choice</h2>
+        <input type="number" placeholder="enter the price" id="price-input">
+        <input type="number" placeholder="enter the Bedrooms" id="bedroom-input">
+        <select  id="check-Available">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+        <button id="filter-btn">Apply Filter</button>
     </div>
     <div id="displayData">
 
